@@ -13,6 +13,7 @@ class FollowerCard extends React.Component {
     componentDidMount(){
         axios.get("https://api.github.com/users/khalil-foulks/followers")
         .then(res => {
+            console.log(res.data)
             this.setState({
                 githubFollowerData:res.data
             })
@@ -25,7 +26,7 @@ class FollowerCard extends React.Component {
                 {
                     this.state.githubFollowerData.map(follower => (
                         <div>
-                            <Card follower={follower}/>
+                            <Card key={follower.id} follower={follower}/>
                         </div>
                     ))
                 }

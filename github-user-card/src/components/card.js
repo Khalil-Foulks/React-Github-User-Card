@@ -8,12 +8,9 @@ class Card extends React.Component{
                 <h2 className='name'>
                     {this.props.follower.name}
                     <p>Username: {this.props.follower.login}</p>
-                    <p>Location: {this.props.follower.location}</p>
                     <p>Profile:
                         <a href={this.props.follower.html_url} target='blank'>Profile Link</a>
                     </p>
-                    <p>Followers:{this.props.follower.followers} </p>
-                    <p>Following:{this.props.follower.following} </p>
                 </h2>
             </div>
         )

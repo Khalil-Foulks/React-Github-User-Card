@@ -30,7 +30,6 @@ class App extends React.Component {
   render(){
       return (
       <div className="App">
-        <div>Working</div>
         <UserCard githubData={this.state.githubData}/>
       </div>
     );
