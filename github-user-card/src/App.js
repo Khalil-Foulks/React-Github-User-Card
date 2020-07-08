@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import UserCard from './components/UserCard'
+import UserCard from './components/userCard'
 
 class App extends React.Component {
 

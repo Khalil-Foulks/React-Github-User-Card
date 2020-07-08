@@ -11,7 +11,7 @@ class UserCard extends React.Component {
                         {this.props.githubData.name}
                         <p>Username: {this.props.githubData.login}</p>
                         <p>Location: {this.props.githubData.location}</p>
-                        <p>Profile:
+                        <p>
                             <a href={this.props.githubData.html_url} target='blank'>Profile Link</a>
                         </p>
                         <p>Followers:{this.props.githubData.followers} </p>
